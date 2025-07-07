@@ -1,0 +1,149 @@
+body {
+  background-color: #000;
+  color: #00ff00;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, p {
+  color: #00ff00;
+  text-shadow: 0 0 5px #00ff00;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #111;
+  border-bottom: 1px solid #00ff00;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+.title img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.profile {
+  background-color: #000;
+  border: 1px solid #00ff00;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+.profile-icon {
+  background-color: #00ff00;
+  color: #000;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 50%;
+  margin-right: 8px;
+  display: inline-block;
+}
+
+.panel {
+  padding: 20px;
+}
+
+.feature {
+  display: flex;
+  justify-content: space-between;
+  background-color: #111;
+  border: 1px solid #00ff00;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.feature-info {
+  display: flex;
+  align-items: center;
+}
+
+.feature-info img {
+  display: none;
+}
+
+.feature-info h3, .feature-info p {
+  margin: 0;
+}
+
+.toggle-switch {
+  cursor: pointer;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  background-color: #444;
+  transition: 0.4s;
+  border-radius: 24px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 3px;
+  background-color: #00ff00;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+input:checked + .slider {
+  background-color: #00cc00;
+}
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #00ff00;
+  margin-top: 40px;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 100px auto;
+  background-color: #111;
+  padding: 30px;
+  border: 1px solid #00ff00;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.login-container input, .login-container button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+  background-color: #000;
+  color: #00ff00;
+  border: 1px solid #00ff00;
+}
+
+.login-container button {
+  background-color: #00ff00;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
